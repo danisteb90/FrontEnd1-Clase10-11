@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./form.css" />
+  <title>Add Superheroe</title>
+</head>
+<body>
+  <main>
+      <p class="disc">Descuentos 20%</p>
+      <div class="logo">
+      <img src="./assets/Logo.png" alt="logo" />
+      <h1 class="title">Card Super Heroes</h1>
+    </div>
+    <nav>
+      <a href="./index.html" class="back-button">Inicio</a>
+      <a href="">Contacto</a>
+      <a href="">Registrarme</a>
+      <a href="">Ingresar</a>
+    </nav>
+    <form action="" method="GET">
+      <div class="form-title">
+        <h1>Añadí tu super!</h1>
+        <p>Agregá tu personaje favorito completando las opciones</p>
+      </div>
+    <section class="form-info">
+      <div class="info-left">
+        <label for="name" class="l-data">
+        *Nombre
+          <input type="text" id="name" name="name" />
+        </label>
+        <label for="date" class="l-data">
+        Fecha
+          <input type="date" id="date" name="date" />
+        </label>
+      <textarea
+        name="description"
+        id="description"
+        cols="30"
+        rows="17"
+        placeholder="Descripción"
+      ></textarea>
+      </div>
+      <div class="info-right">
+        <label for="specie" class="l-data spacing">
+        *Especie
+          <select name="specie" id="specie">
+            <option value="Selection" selected>Seleccione una opcion</option>
+            <option value="Unknown">Unknown</option>
+            <option value="Rare">Rare</option>
+            <option value="Special">Special</option>
+            <option value="Mystic">Mystic</option>
+          </select>
+        </label>
+        <div>
+          <p class="p-text">Agregar Foto</p>
+          <label for="file-upload" class="l-data custom-file-upload spacing">
+          Seleccionar archivo
+          </label>
+          <input id="file-upload" type="file" />
+        </div>
+        <p class="p-text t-poderes">Poderes</p>
+        <label for="volar" class="poderes">
+          <input type="checkbox" value="volar" id="volar" name="volar">
+          <span>Volar</span>
+        </label>
+        <label for="inteligencia" class="poderes">
+          <input type="checkbox" value="inteligencia" id="inteligencia" name="inteligencia">
+          <span>SuperInteligencia</span>
+        </label>
+        <label for="laser" class="poderes">
+          <input type="checkbox" value="laser" id="inteligencia" name="laser">
+          <span>Vista de rayo láser</span>
+        </label>
+        <label for="billetera" class="poderes">
+          <input type="checkbox" value="billetera" id="billetera" name="inteligencia">
+          <span>Billetera gorda</span>
+        </label>
+        <div class="line"></div>
+        <p class="p-text t-poderes">Tipo de personaje</p>
+        <label for="heroe" class="poderes">
+          <input type="radio" name="heroe" id="heroe" value="heroe">
+          <span>Héroe / Heroina</span>
+        </label>
+        <label for="villano" class="poderes">
+          <input type="radio" name="villano" id="villano" value="villano">
+          <span>Villano / Villana</span>
+        </label>
+      </div>
+    </section>
+    <button>Añadir</button>
+  </form>
+  </main>
+  <footer>
+    <p>Todos los derechos reservados a FRONT END 1</p>
+  </footer>
+</body>
+</html>
